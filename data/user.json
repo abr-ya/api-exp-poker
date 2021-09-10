@@ -1,0 +1,44 @@
+{
+  "user": [
+    {
+      "id": "TVasX8",
+      "first_name": "David",
+      "last_name": "Blaim",
+      "position": "Junior",
+      "image": "Elon_Musk_2015.jpg",
+      "is_observer": false,
+      "is_master": true,
+      "game": 1
+    },
+    {
+      "id": "8PykIx",
+      "first_name": "Dayana",
+      "last_name": "Ross",
+      "position": "Junior",
+      "image": "Elon_Musk_2015.jpg",
+      "is_observer": false,
+      "is_master": false,
+      "game": 1
+    },
+    {
+      "id": "G7nRXk",
+      "first_name": "Mark",
+      "last_name": "Single",
+      "position": "Engeneer",
+      "image": "Elon_Musk_2015.jpg",
+      "is_observer": false,
+      "is_master": false,
+      "game": 1
+    },
+    {
+      "id": "0Uscm9",
+      "first_name": "Jane",
+      "last_name": "Ring",
+      "position": "Engeneer",
+      "image": "Elon_Musk_2015.jpg",
+      "is_observer": false,
+      "is_master": false,
+      "game": 2
+    }
+  ]
+}
