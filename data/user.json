@@ -39,6 +39,15 @@
       "is_observer": false,
       "is_master": false,
       "game": 2
+    },
+    {
+      "id": "SbPQ_k",
+      "first_name": "Thunder",
+      "last_name": "User",
+      "position": "tester",
+      "image": "img.jpg",
+      "is_observer": false,
+      "is_master": true
     }
   ]
 }
