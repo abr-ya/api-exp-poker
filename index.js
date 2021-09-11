@@ -1,7 +1,7 @@
-import express from "express";
-import cors from "cors";
-import user from "./routes/user.js";
-import game from "./routes/game.js";
+const express = require("express");
+const cors = require("cors");
+const user = require("./routes/user.js");
+const game = require("./routes/game.js");
 
 const app = express();
 

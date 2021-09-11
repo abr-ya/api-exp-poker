@@ -1,7 +1,7 @@
-import { Router } from "express";
-import { nanoid } from "nanoid";
-import lowDb from "lowdb";
-import FileSync from "lowdb/adapters/FileSync.js";
+const { Router } = require("express");
+const { nanoid } = require("nanoid");
+const lowDb = require("lowdb");
+const FileSync = require("lowdb/adapters/FileSync");
 
 const router = Router();
 const db = lowDb(new FileSync('data/user.json'));
@@ -22,4 +22,4 @@ router.post('/', (req, res) => {
   res.status(201).json({ newUser });
 });
 
-export default {router, db};
+module.exports = {router, db};
