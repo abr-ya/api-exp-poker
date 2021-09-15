@@ -30,16 +30,42 @@ app.use('/user', user.router);
 app.use('/game', game.router);
 app.use('/task', task.router);
 
-// temp - на корень - все пользователи
-app.get('/', (req, res) => {
-  const data = user.db.get("user").value()
-  return res.json(data)
-});
 
+// SWAGGER START //
+const swaggerJSDoc = require('swagger-jsdoc');
+const swaggerUi = require('swagger-ui-express');
+
+const swaggerDefinition = {
+  openapi: '3.0.0',
+  info: {
+    title: 'Express API for Poker',
+    version: '1.0.0',
+    description: 'This is a REST API application made with Express.',
+  },
+};
+
+const options = {
+  swaggerDefinition,
+  apis: ['./routes/*.js'],
+}
+
+const swaggerSpec = swaggerJSDoc(options);
+app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+// SWAGGER END //
+
+
+// temp - на корень - все пользователи  - не нужно - там теперь паблик
+// app.get('/', (req, res) => {
+//   const data = user.db.get("user").value()
+//   return res.json(data)
+// });
+
+// подготовка для сокетов
 const allUsers = user.db.get("user").value();
 const allTasks = task.db.get("task").value();
-// console.log(users);
 
+
+// SOCKET-IO start //
 // Run when client connects
 const botName = 'Socket Test App Bot';
 io.on('connection', socket => {
@@ -98,6 +124,7 @@ io.on('connection', socket => {
     }
   });
 });
+// SOCKET-IO end //
 
 
 const PORT = process.env.PORT || 4000;
