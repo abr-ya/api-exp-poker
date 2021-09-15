@@ -1,14 +1,14 @@
 {
   "user": [
     {
-      "id": "TVasX8",
+      "id": "DVasX8",
       "first_name": "David",
       "last_name": "Blaim",
       "position": "Junior",
       "image": "Elon_Musk_2015.jpg",
       "is_observer": false,
       "is_master": true,
-      "game": 1
+      "game": "TVasX8"
     },
     {
       "id": "8PykIx",
@@ -18,7 +18,7 @@
       "image": "Elon_Musk_2015.jpg",
       "is_observer": false,
       "is_master": false,
-      "game": 1
+      "game": "TVasX8"
     },
     {
       "id": "G7nRXk",
@@ -28,7 +28,7 @@
       "image": "Elon_Musk_2015.jpg",
       "is_observer": false,
       "is_master": false,
-      "game": 1
+      "game": "TVasX8"
     },
     {
       "id": "0Uscm9",
@@ -48,6 +48,16 @@
       "image": "img.jpg",
       "is_observer": false,
       "is_master": true
+    },
+    {
+      "id": "dYbCae",
+      "first_name": "Thunder2",
+      "last_name": "User2",
+      "position": "tester",
+      "image": "img.jpg",
+      "is_observer": false,
+      "is_master": true,
+      "game": "TVasX8"
     }
   ]
 }
