@@ -63,7 +63,7 @@ app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 // подготовка для сокетов
 const allUsers = user.db.get("user").value();
 const allTasks = task.db.get("task").value();
-
+const allGames = game.db.get("game").value();
 
 // SOCKET-IO start //
 // Run when client connects
@@ -77,10 +77,11 @@ io.on('connection', socket => {
     // Welcome current user
     const users = allUsers.filter(el => el.game === room);
     const tasks = allTasks.filter(el => el.game === room);
+    const game = allGames.filter(el => el.id === room)[0];
     socket.emit('data', {
+      game, 
       users,
       tasks,
-      cards: [1, 3, 5, 7, 9, 'coffee'],
     });
     socket.emit('message', formatMessage(botName, 'Welcome to Socket Test App Bot!'));
 

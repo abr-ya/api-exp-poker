@@ -38,14 +38,14 @@
       "image": "Elon_Musk_2015.jpg",
       "is_observer": false,
       "is_master": false,
-      "game": 2
+      "game": "2"
     },
     {
       "id": "SbPQ_k",
       "first_name": "Thunder",
       "last_name": "User",
       "position": "tester",
-      "image": "img.jpg",
+      "image": "28462.jpg",
       "is_observer": false,
       "is_master": true
     },
@@ -54,10 +54,60 @@
       "first_name": "Thunder2",
       "last_name": "User2",
       "position": "tester",
-      "image": "img.jpg",
+      "image": "28462.jpg",
       "is_observer": false,
       "is_master": true,
       "game": "TVasX8"
+    },
+    {
+      "id": "Xz6SyW",
+      "first_name": "1",
+      "last_name": "2",
+      "position": "3",
+      "is_observer": false,
+      "image": "28462.jpg",
+      "is_master": false,
+      "game": "12345"
+    },
+    {
+      "id": "zSkzCj",
+      "first_name": "tanya",
+      "last_name": "gordey",
+      "position": "junior",
+      "is_observer": true,
+      "image": "milyy-kotik.jpg",
+      "is_master": false,
+      "game": "12345"
+    },
+    {
+      "id": "xmW7Tt",
+      "first_name": "asdf",
+      "last_name": "zxcv",
+      "position": "dsf",
+      "is_observer": false,
+      "image": "milyy-kotik.jpg",
+      "is_master": false,
+      "game": "12345"
+    },
+    {
+      "id": "oJ2rzf",
+      "first_name": "12",
+      "last_name": "23",
+      "position": "34",
+      "is_observer": false,
+      "image": "preview_kotik-s-sharikami.png",
+      "is_master": false,
+      "game": "12345"
+    },
+    {
+      "id": "1RbuTY",
+      "first_name": "test",
+      "last_name": "test1",
+      "position": "jun",
+      "is_observer": false,
+      "image": "28462.jpg",
+      "is_master": false,
+      "game": "12345"
     }
   ]
 }
